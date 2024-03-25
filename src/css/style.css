@@ -1,0 +1,89 @@
+body {
+    background-image: url('../imagem/casamoderna.jpg'); 
+    background-size: contain;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 50px;
+    gap: 60px;
+    align-items: center;
+    height: 100vh;
+}
+
+.descricao-mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    max-width: 300px;
+    color: #ffff00;
+}
+
+.descricao-mensagem h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    width: 400px;
+    max-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkgrey;
+    padding: 50px;
+}
+
+.formulario input {
+    max-width: 300px;
+    font-weight: 100;
+    height: 35px;
+    padding: 9px;
+    border-radius: 20px;
+    border: 1px solid orange;
+}
+
+.formulario input::placeholder {
+    color: #A8A8A8;
+}
+
+.formulario .email, .telefone, .mensagem {
+    margin-top: 15px;
+}
+
+.formulario .mensagem {
+    height: 100px;
+    position: relative;
+}
+
+.formulario .mensagem::placeholder {
+    position: absolute;
+    top: 8px;
+}
+
+.formulario .campos-obrigatorios {
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+
+.formulario .submit {
+    border: none;
+    background-color: #ffff00;
+    cursor: pointer;
+    max-width: 500px;
+    min-height: 50px;
+    border-radius: 100px;
+}
+
+MENSAGEM DE INVALIDAÇÃO
+/*.campo-obrigatorio {
+    font-size: 8px;
+    color: #F52E2E;
+    display: none;
+}*/
